@@ -1,0 +1,84 @@
+/* styles.css */
+
+/* Center Align Text */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Animation */
+header {
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+/* About Section Animation */
+.about {
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+/* Features Section Animation */
+.features {
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* Contact Section Animation */
+.contact {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Footer Animation */
+footer {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Bootstrap Classes for Animations */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

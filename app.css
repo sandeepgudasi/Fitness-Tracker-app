@@ -1,0 +1,172 @@
+/* Add Bootstrap animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeInDown;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.deleteButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.deleteButton:hover {
+    background-color: #da190b;
+}
+
+#progressText {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    animation: fadeIn;
+}
+
+/* Align text in sections */
+.about h2,
+.features h2,
+.contact h2 {
+    text-align: center;
+}
+
+.about p,
+.features ul,
+.contact p,
+.contact ul {
+    text-align: center;
+}
+
+/* Carousel Animation */
+.carousel-item {
+    animation: fadeIn;
+}
